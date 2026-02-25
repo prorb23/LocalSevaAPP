@@ -11,7 +11,7 @@ import {
     Layers, Search, MapPin, Tag, LogOut, User, Calendar, Star, ChevronDown, SlidersHorizontal 
 } from 'lucide-react';
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 // --- MODIFIED: Categories now match the ProviderDashboard ---
 const categoryOptions = [

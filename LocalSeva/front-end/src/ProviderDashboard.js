@@ -12,7 +12,7 @@ import {
     User, LogOut, FilePenLine, Trash2, CircleDollarSign, Bell, Star
 } from 'lucide-react';
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 // --- FIXED: Updated category list to be consistent with the rest of the app ---
 const FALLBACK_CATEGORIES = ["Home Painting", "AC Repair & Service", "RO Water Purifier", "Catering Services", "Pest Control", "Movers & Packers", "Other"];

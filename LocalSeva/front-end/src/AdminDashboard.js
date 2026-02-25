@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './AdminDashboard.css';
 import { Layers, Users, Briefcase, BarChart, ClipboardCheck, LogOut, LayoutDashboard, ShieldCheck } from 'lucide-react';
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 const StatCard = ({ icon, title, value, color, animationDelay }) => (
     <div className="admin-stat-card" style={{ '--stat-color': color, animationDelay }}>

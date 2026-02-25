@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import './BookingModal.css';
 import { Calendar, Clock, ChevronLeft, ChevronRight, X } from 'lucide-react'; // MODIFIED: Using Lucide icons
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 const BookingModal = ({ service, onClose, axiosWithAuth }) => {
     const [selectedDate, setSelectedDate] = useState(new Date());

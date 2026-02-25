@@ -7,7 +7,7 @@ import RatingModal from './RatingModal';
 import './MyBookings.css'; 
 import { Star, ArrowLeft, Layers } from 'lucide-react'; // MODIFIED: Using Lucide icons
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 const StarRatingDisplay = ({ rating }) => {
     return (

@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import './ImageUploader.css';
 import { UploadCloud, ImageUp } from 'lucide-react'; // MODIFIED: Using Lucide icons
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = process.env.REACT_APP_API_URL;
 
 const ImageUploader = ({ onUploadComplete, initialImageUrl }) => {
     const [uploading, setUploading] = useState(false);
